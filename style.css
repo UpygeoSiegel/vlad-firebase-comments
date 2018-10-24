@@ -1,0 +1,10 @@
+#header{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: helvetica;
+  text-align: center
+}
+
+#project{
+  width: 100%
+}

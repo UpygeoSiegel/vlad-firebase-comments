@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Firebase Materialize Comments</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAIUMxkShr_-wL-dO2nS_vxcrm_ePmPsHs",
+    authDomain: "fir-drill-37c40.firebaseapp.com",
+    databaseURL: "https://fir-drill-37c40.firebaseio.com",
+    projectId: "fir-drill-37c40",
+    storageBucket: "fir-drill-37c40.appspot.com",
+    messagingSenderId: "1078754242584"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Dope Projects</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">About Us</a></li>
+        <li><a href="collapsible.html">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col s1"></div>
+      <div class="col s10">
+        <h1 id="header">Sample Project Page</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <img id = "project" src="https://images.adsttc.com/media/images/5361/afe8/c07a/80f0/d900/004e/large_jpg/MMA10.jpg?1398910927"/>
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s3"></div>
+      <div class="col s6">
+        <h5 id = "header">Comments</h5>
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="comment" class="materialize-textarea"></textarea>
+              <label for="textarea1">Textarea</label>
+            </div>
+          </div>
+          <button id = "submitComment" class="btn waves-effect waves-light" type="submit" name="action">Submit
+          <i class="material-icons right">send</i>
+        </button>
+        </form>
+        <div class="row">
+          <div class="col s12" id="userComments"></div>
+        </div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js">
+
+</script>
+
+</html>
