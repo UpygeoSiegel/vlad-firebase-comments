@@ -8,3 +8,8 @@
 #project{
   width: 100%
 }
+
+#submitComment {
+  position: relative;
+  bottom: 10px
+}
